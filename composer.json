@@ -1,11 +1,15 @@
 {
-  "name": "pion/laravel-chunk-upload",
+  "name": "yadda/laravel-chunk-upload",
   "description": "Service for chunked upload with several js providers",
   "license": "MIT",
   "authors": [
     {
       "name": "Martin Kluska",
       "email": "martin@kluska.cz"
+    },
+    {
+      "name": "Jake Gully",
+      "email": "jake@maya.agency"
     }
   ],
   "scripts": {
@@ -15,13 +19,13 @@
     "test": "./vendor/bin/phpunit"
   },
   "require": {
-    "illuminate/http": "5.1 - 5.8",
-    "illuminate/console": "5.1 - 5.8",
-    "illuminate/support": "5.1 - 5.8",
-    "illuminate/filesystem": "5.1 - 5.8"
+    "illuminate/http": "^6.0",
+    "illuminate/console": "^6.0",
+    "illuminate/support": "^6.0",
+    "illuminate/filesystem": "^6.0"
   },
   "require-dev": {
-    "laravel/laravel": "5.1 - 5.8",
+    "laravel/laravel": "^6.0",
     "phpunit/phpunit": "5.7 || 6.0 || 7.0 || 7.5",
     "mockery/mockery": "^1.1.0",
     "friendsofphp/php-cs-fixer": "^2.12",
@@ -37,12 +41,12 @@
       "Tests\\": "tests/"
     }
   },
-  "extra":{
-     "laravel":{
-        "providers":[
-           "Pion\\Laravel\\ChunkUpload\\Providers\\ChunkUploadServiceProvider"
-        ]
-     }
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pion\\Laravel\\ChunkUpload\\Providers\\ChunkUploadServiceProvider"
+      ]
+    }
   },
   "minimum-stability": "stable"
 }
